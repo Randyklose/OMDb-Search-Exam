@@ -4,22 +4,25 @@ import { browserHistory as history } from 'react-router';
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this._handleSubmit = this._handleSubmit.bind(this);
+    this._handleChange = this._handleChange.bind(this);
   }
 
-  _handleSubmit(e) {
+  _handleChange(e) {
     e.preventDefault();
-    history.push(`/movie/${this.refs.userInput.value}`)
+    history.push(`/movie/${this.refs.userInput.value}`);
 }
+
   render() {
     return (
-      <div className="search-page">
-        <h2>Enter a movie title</h2>
-        <form onSubmit={this._handleSubmit}>
-          <input ref="userInput" className="search-page__input" type="text" />
-          <button className="search-page__button">Search</button>
-        </form>
-      </div>
+        <div className="search-page">
+          <form>
+            <input ref="userInput"
+              className="search-movie__input"
+              placeholder="Enter a movie title"
+              type="text"
+              onChange={this._handleChange}/>
+          </form>
+        </div>
     )
   }
 }

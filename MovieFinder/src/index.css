@@ -3,8 +3,102 @@ body, html {
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+  background-color: #607D8B;
 }
-
+.main-header a {
+    text-decoration: none;
+    color: white;
+    font-family: helvetica sans-serif;
+}
 .search-page {
 text-align: center;
+}
+.search-movie__input {
+  text-transform: uppercase;
+  text-align: center;
+  height:3em;
+  font-size: 2em;
+  border: 2px solid #455A64;
+  background-color: rgba(200, 207, 196,0.5);
+  color:white;
+  margin-top: 2%;
+}
+
+.movie-info__titles {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+}
+.titles{
+  margin-right: 5%;
+  width: 15%;
+  max-height: 20%;
+}
+.title-display{
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-display p{
+  font-size: 1rem;
+  color: #78909C;
+  margin: 0;
+  text-align: center;
+  font-weight: 100;
+}
+.details-display{
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content:flex-start;
+}
+.details-display p{
+  font-size: 1rem;
+  color: #78909C;
+  margin: 0;
+  font-weight: 100;
+}
+.details-display h4{
+  font-size: 2rem;
+  color: #78909C;
+  margin: 0;
+  font-weight: 400;
+}
+.poster-display{
+  margin-right: 30%;
+  padding: 2% 5%;
+  width: 100%;
+  display: flex;
+}
+.poster-display p{
+  font-size: 1rem;
+  color: #78909C;
+  margin: 0;
+  font-weight: 300;
+  padding-left: 5%;
+}
+#plot{
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.headline{
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.details-page{
+  margin: 3% 15%;
+
+}
+.details-head{
+  display: flex;
 }
