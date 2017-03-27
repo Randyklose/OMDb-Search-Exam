@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: helvetica sans-serif;
   box-sizing: border-box;
   background-color: #607D8B;
 }
@@ -101,4 +101,25 @@ a {
 }
 .details-head{
   display: flex;
+}
+
+@media (max-width: 764px) {
+  .titles{
+    width: 45%;
+  }
+  .title-display{
+    margin-top: 2%;
+  max-height: 50%;
+  }
+  .poster-display{
+    display: flex;
+    justify-content: center;
+    flex-flow:column wrap;
+    align-items: center;
+  }
+  .poster-display img{
+    padding-left: 5%;
+    max-width: 200px;
+    max-height: 300px;
+  }
 }
